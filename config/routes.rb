@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # Reveal health status on /up
   get "up" => "rails/health#show", as: :rails_health_check
 
-  # Root path
+  Root path
   root to: "lists#index"
 
   # Resources
