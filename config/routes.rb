@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Root path
-  root "lists#index"
+  root to: "lists#index"
 
   # Health check
   get "up" => "rails/health#show", as: :rails_health_check
