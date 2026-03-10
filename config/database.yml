@@ -1,20 +1,13 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-
-development:
-  <<: *default
-  database: rails-watch-list_development
-
-test:
-  <<: *default
-  database: rails-watch-list_test
-
 production:
   primary:
     <<: *default
-    url: <%= ENV['DATABASE_URL'] %>
+    url: <%= ENV["DATABASE_URL"] %>
+  cache:
+    <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
+  queue:
+    <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
   cable:
     <<: *default
-    url: <%= ENV['DATABASE_URL'] %>
+    url: <%= ENV["DATABASE_URL"] %>

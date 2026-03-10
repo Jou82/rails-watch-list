@@ -41,7 +41,10 @@ gem "cloudinary"
 gem 'active_storage_validations'
 
 # Dotenv para variáveis de ambiente
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails'
+
+
+
 
 # GEMS DE ASSETS - movidas para um grupo específico
 
