@@ -59,8 +59,8 @@ Rails.application.configure do
 
   # Set host to be used by links generated in mailer templates.
   config.action_mailer.default_url_options = { host: "example.com" }
- config.action_controller.asset_host = "https://rails-watch-list-jou82-d4c79a369377.herokuapp.com/"
- config.action_mailer.asset_host = "https://rails-watch-list-jou82-d4c79a369377.herokuapp.com/"# Specify outgoing SMTP server. Remember to add smtp/* credentials via bin/rails credentials:edit.
+  config.action_controller.asset_host = "https://rails-watch-list-jou82-d4c79a369377.herokuapp.com/"
+  config.action_mailer.asset_host = "https://rails-watch-list-jou82-d4c79a369377.herokuapp.com/"# Specify outgoing SMTP server. Remember to add smtp/* credentials via bin/rails credentials:edit.
   # config.action_mailer.smtp_settings = {
   #   user_name: Rails.application.credentials.dig(:smtp, :user_name),
   #   password: Rails.application.credentials.dig(:smtp, :password),
@@ -88,6 +88,3 @@ Rails.application.configure do
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 end
-cat > Procfile << 'EOF'
-web: bundle exec puma -C config/puma.rb
-release: bin/rails db:migrate
