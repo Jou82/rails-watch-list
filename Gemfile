@@ -44,14 +44,14 @@ gem 'active_storage_validations'
 gem 'dotenv-rails', groups: [:development, :test]
 
 # GEMS DE ASSETS - movidas para um grupo específico
-group :assets do
-  gem "sprockets-rails"
-  gem "sassc-rails"
-  gem "bootstrap", "~> 5.3"
-  gem "autoprefixer-rails"
-  gem "font-awesome-sass", "~> 6.1"
-  gem "simple_form"
-end
+
+gem "sprockets-rails"
+gem "sassc-rails"
+gem "bootstrap", "~> 5.3"
+gem "autoprefixer-rails"
+gem "font-awesome-sass", "~> 6.1"
+gem "simple_form"
+
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
