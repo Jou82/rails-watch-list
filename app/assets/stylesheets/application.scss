@@ -1,16 +1,16 @@
-// Graphical variables
-@import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap_variables";
+// // Graphical variables
+// @import "config/fonts";
+// @import "config/colors";
+// @import "config/bootstrap_variables";
 
-// Bootstrap - DEVE VIR ANTES dos componentes que usam suas variáveis!
-@import "bootstrap";
+// // Bootstrap - DEVE VIR ANTES dos componentes que usam suas variáveis!
+// @import "bootstrap";
 
-// Your CSS partials
-@import "components/index";
-@import "pages/index";
+// // Your CSS partials
+// @import "components/index";
+// @import "pages/index";
 
-// Seus estilos customizados
+// Seus estilos customizados// Seus estilos customizados (sem imports do Bootstrap)
 .list-card {
   transition: all 0.3s ease;
 
