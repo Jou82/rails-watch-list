@@ -1,18 +1,1 @@
-/*
- * This is a manifest file that'll be compiled into application.css
- *= require_tree .
- *= require_self
- */
-
-// Seus estilos básicos
-.list-card {
-  transition: all 0.3s ease;
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
-  }
-}
-
-.bg-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
+/* Empty file */
