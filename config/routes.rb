@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  # Reveal health status on /up
+  # Root path
+  root "lists#index"
+
+  # Health check
   get "up" => "rails/health#show", as: :rails_health_check
 
-  # Root path
-  root to: "lists#index"
-
   # Resources
-  resources :lists, only: [ :index, :show, :new, :create, :destroy ]
-  resources :bookmarks, only: [ :new, :create, :destroy ]
+  resources :lists, only: [ :index, :show, :new, :create, :destroy ] do
+    resources :bookmarks, only: [ :new, :create ]
+  end
+
+  resources :bookmarks, only: [ :destroy ]
 end
