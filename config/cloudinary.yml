@@ -1,0 +1,13 @@
+development:
+  cloud_name: "dyplenk9j"
+  api_key: "833632791158726"
+  api_secret: "833632791158726"
+  enhance_image_tag: true
+  static_file_support: false
+
+production:
+  cloud_name: "dyplenk9j"
+  api_key: "833632791158726"
+  api_secret: "833632791158726"
+  enhance_image_tag: true
+  static_file_support: true

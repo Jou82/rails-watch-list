@@ -1,8 +1,43 @@
-<div class="container">
-<h1>Create a new list</h1>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white py-3">
+          <h2 class="mb-0">
+            <i class="fas fa-plus-circle me-2"></i>
+            Create a New List
+          </h2>
+        </div>
 
-<%= simple_form_for @list do |f| %>
-<%= f.input:name %>
-<%= f.submit "Create list" %>
-<% end %>
+        <div class="card-body p-4">
+          <%= simple_form_for @list, html: { multipart: true } do |f| %>
+
+            <div class="mb-4">
+              <%= f.input :name,
+                  label: 'List Name',
+                  placeholder: 'e.g., Best Sci-Fi Movies of All Time',
+                  input_html: { class: 'form-control form-control-lg' } %>
+            </div>
+
+            <div class="mb-4">
+              <%= f.label :photo, 'Cover Image', class: 'form-label fw-bold' %>
+              <%= f.input :photo, as: :file,
+                  input_html: { accept: 'image/png,image/jpg,image/jpeg' },
+                  label: false,
+                  hint: 'PNG, JPG or JPEG (Max 5MB)' %>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <%= link_to lists_path, class: 'btn btn-outline-secondary me-md-2' do %>
+                <i class="fas fa-times me-2"></i>Cancel
+              <% end %>
+              <%= f.button :button, class: 'btn btn-primary' do %>
+                <i class="fas fa-save me-2"></i>Create List
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

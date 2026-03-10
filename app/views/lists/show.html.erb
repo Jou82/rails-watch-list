@@ -1,17 +1,73 @@
-<div class="container">
-<h1><%= @list.name %></h1>
-<ul>
-<% @list.bookmarks.each do |bookmark| %>
-    <li>
-      <%= bookmark.movie.title %> - <%= bookmark.comment %>
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="position-relative rounded overflow-hidden" style="height: 400px;">
+        <% if @list.photo.attached? %>
+          <%= cl_image_tag @list.photo.key,
+              class: "img-fluid w-100 h-100",
+              style: "object-fit: cover;",
+              alt: @list.name,
+              crop: :fill,
+              gravity: :auto %>
+        <% else %>
+          <div class="bg-secondary w-100 h-100 d-flex align-items-center justify-content-center"
+               style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <i class="fas fa-film fa-5x text-white opacity-50"></i>
+          </div>
+        <% end %>
 
-      <%= link_to "Delete",
-      bookmark_path(bookmark),
-      data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+        <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+             style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+          <h1 class="display-4 fw-bold"><%= @list.name %></h1>
+          <p class="lead mb-0">
+            <i class="fas fa-film me-2"></i>
+            <%= pluralize(@list.movies.count, 'movie') %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </li>
-  <% end %>
-  </ul>
-  <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
+  <div class="row mb-4">
+    <div class="col-12">
+      <%= link_to lists_path, class: 'btn btn-outline-secondary' do %>
+        <i class="fas fa-arrow-left me-2"></i>Back to lists
+      <% end %>
 
+      <%= link_to new_list_path, class: 'btn btn-primary ms-2' do %>
+        <i class="fas fa-plus me-2"></i>Create New List
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2 class="mb-4">
+        <i class="fas fa-film me-2 text-primary"></i>
+        Movies in this list
+      </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <% @list.movies.each do |movie| %>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <%= image_tag movie.poster_url,
+              class: "card-img-top",
+              alt: movie.title,
+              style: "height: 300px; object-fit: cover;" %>
+          <div class="card-body">
+            <h5 class="card-title fw-bold"><%= movie.title %></h5>
+            <p class="card-text text-muted small"><%= movie.overview.truncate(100) %></p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <span class="badge bg-warning text-dark">
+              <i class="fas fa-star me-1"></i><%= movie.rating %>
+            </span>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

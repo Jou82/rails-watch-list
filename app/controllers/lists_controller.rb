@@ -1,10 +1,13 @@
 class ListsController < ApplicationController
+  before_action :set_list, only: [:show, :destroy]
+
   def index
-    @lists = List.all
+    @lists = List.all.order(created_at: :desc)
   end
 
   def show
-    @list = List.find(params[:id])
+    @bookmark = Bookmark.new
+    @movies = @list.movies
   end
 
   def new
@@ -13,13 +16,25 @@ class ListsController < ApplicationController
 
   def create
     @list = List.new(list_params)
-    @list.save
-    redirect_to lists_path
+    if @list.save
+      redirect_to @list, notice: 'List was successfully created.'
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @list.destroy
+    redirect_to lists_url, notice: 'List was successfully destroyed.'
   end
 
   private
 
+  def set_list
+    @list = List.find(params[:id])
+  end
+
   def list_params
-    params.require(:list).permit(:name)
+    params.require(:list).permit(:name, :photo)
   end
 end

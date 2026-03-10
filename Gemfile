@@ -33,7 +33,8 @@ gem "bootstrap", "~> 5.3"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
-
+gem "cloudinary"
+gem 'active_storage_validations'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
