@@ -1,0 +1,226 @@
+remote: Updated 140 paths from 8e84aa3        
+remote: Git submodules detected, installing:        
+remote: Submodule 'spec' (https://github.com/lewagon/fullstack-challenges-04-Rails-watch-list-specs.git) registered for path 'spec'        
+remote: Cloning into '/mnt/enc/endosome/1912723.2076fdc2-74d7-4924-9ab4-aafc49a56d36/worktree/spec'...        
+remote: Submodule path 'spec': checked out '5dec18d1223b01fd632b61153effb234d94177f7'        
+remote: 
+remote: Compressing source files... done.        
+remote: Building source:        
+remote: 
+remote: -----> Building on the Heroku-24 stack        
+remote: -----> Using buildpack: heroku/ruby        
+remote: -----> Ruby app detected        
+remote: -----> Using Ruby version: ruby-3.3.9        
+remote: -----> Installing bundler 4.0.6        
+remote: -----> Installing dependencies using bundler 4.0.6        
+remote:        Running: BUNDLE_WITHOUT='development:test' BUNDLE_PATH=vendor/bundle BUNDLE_BIN=vendor/bundle/bin BUNDLE_DEPLOYMENT=1 bundle install -j4        
+remote:        Bundle complete! 31 Gemfile dependencies, 113 gems now installed.        
+remote:        Gems in the groups 'development' and 'test' were not installed.        
+remote:        Bundled gems are installed into `./vendor/bundle`        
+remote:        1 installed gem you directly depend on is looking for funding.        
+remote:          Run `bundle fund` for details        
+remote:        Bundle completed (0.39s)        
+remote:        Cleaning up the bundler cache.        
+remote:        Running: bundle list        
+remote:        Gems included by the bundle:        
+remote:          * action_text-trix (2.1.16)        
+remote:          * actioncable (8.1.2)        
+remote:          * actionmailbox (8.1.2)        
+remote:          * actionmailer (8.1.2)        
+remote:          * actionpack (8.1.2)        
+remote:          * actiontext (8.1.2)        
+remote:          * actionview (8.1.2)        
+remote:          * active_storage_validations (3.0.3)        
+remote:          * activejob (8.1.2)        
+remote:          * activemodel (8.1.2)        
+remote:          * activerecord (8.1.2)        
+remote:          * activestorage (8.1.2)        
+remote:          * activesupport (8.1.2)        
+remote:          * autoprefixer-rails (10.4.21.0)        
+remote:          * base64 (0.3.0)        
+remote:          * bcrypt_pbkdf (1.1.2)        
+remote:          * bigdecimal (4.0.1)        
+remote:          * bootsnap (1.23.0)        
+remote:          * bootstrap (5.3.8)        
+remote:          * builder (3.3.0)        
+remote:          * cloudinary (2.4.4)        
+remote:          * concurrent-ruby (1.3.6)        
+remote:          * connection_pool (3.0.2)        
+remote:          * crass (1.0.6)        
+remote:          * date (3.5.1)        
+remote:          * dotenv (3.2.0)        
+remote:          * drb (2.2.3)        
+remote:          * ed25519 (1.4.0)        
+remote:          * erb (6.0.2)        
+remote:          * erubi (1.13.1)        
+remote:          * et-orbi (1.4.0)        
+remote:          * execjs (2.10.0)        
+remote:          * faraday (2.14.1)        
+remote:          * faraday-follow_redirects (0.5.0)        
+remote:          * faraday-multipart (1.2.0)        
+remote:          * faraday-net_http (3.4.2)        
+remote:          * ffi (1.17.3)        
+remote:          * font-awesome-sass (6.7.2)        
+remote:          * fugit (1.12.1)        
+remote:          * globalid (1.3.0)        
+remote:          * i18n (1.14.8)        
+remote:          * image_processing (1.14.0)        
+remote:          * importmap-rails (2.2.3)        
+remote:          * io-console (0.8.2)        
+remote:          * irb (1.17.0)        
+remote:          * jbuilder (2.14.1)        
+remote:          * json (2.19.1)        
+remote:          * kamal (2.10.1)        
+remote:          * logger (1.7.0)        
+remote:          * loofah (2.25.0)        
+remote:          * mail (2.9.0)        
+remote:          * marcel (1.1.0)        
+remote:          * mini_magick (5.3.1)        
+remote:          * mini_mime (1.1.5)        
+remote:          * minitest (6.0.2)        
+remote:          * msgpack (1.8.0)        
+remote:          * multipart-post (2.4.1)        
+remote:          * net-http (0.9.1)        
+remote:          * net-imap (0.6.3)        
+remote:          * net-pop (0.1.2)        
+remote:          * net-protocol (0.2.2)        
+remote:          * net-scp (4.1.0)        
+remote:          * net-sftp (4.0.0)        
+remote:          * net-smtp (0.5.1)        
+remote:          * net-ssh (7.3.0)        
+remote:          * nio4r (2.7.5)        
+remote:          * nokogiri (1.19.1)        
+remote:          * ostruct (0.6.3)        
+remote:          * pg (1.6.3)        
+remote:          * popper_js (2.11.8)        
+remote:          * pp (0.6.3)        
+remote:          * prettyprint (0.2.0)        
+remote:          * prism (1.9.0)        
+remote:          * psych (5.3.1)        
+remote:          * puma (7.2.0)        
+remote:          * raabro (1.4.0)        
+remote:          * racc (1.8.1)        
+remote:          * rack (3.2.5)        
+remote:          * rack-session (2.1.1)        
+remote:          * rack-test (2.2.0)        
+remote:          * rackup (2.3.1)        
+remote:          * rails (8.1.2)        
+remote:          * rails-dom-testing (2.3.0)        
+remote:          * rails-html-sanitizer (1.7.0)        
+remote:          * railties (8.1.2)        
+remote:          * rake (13.3.1)        
+remote:          * rdoc (7.2.0)        
+remote:          * reline (0.6.3)        
+remote:          * ruby-vips (2.3.0)        
+remote:          * sassc (2.4.0)        
+remote:          * sassc-rails (2.1.2)        
+remote:          * securerandom (0.4.1)        
+remote:          * simple_form (5.4.1)        
+remote:          * solid_cable (3.0.12)        
+remote:          * solid_cache (1.0.10)        
+remote:          * solid_queue (1.3.2)        
+remote:          * sprockets (4.2.2)        
+remote:          * sprockets-rails (3.5.2)        
+remote:          * sshkit (1.25.0)        
+remote:          * stimulus-rails (1.3.4)        
+remote:          * stringio (3.2.0)        
+remote:          * thor (1.5.0)        
+remote:          * thruster (0.1.19)        
+remote:          * tilt (2.7.0)        
+remote:          * timeout (0.6.0)        
+remote:          * tsort (0.2.0)        
+remote:          * turbo-rails (2.0.23)        
+remote:          * tzinfo (2.0.6)        
+remote:          * uri (1.1.1)        
+remote:          * useragent (0.16.11)        
+remote:          * websocket-driver (0.8.0)        
+remote:          * websocket-extensions (0.1.5)        
+remote:          * zeitwerk (2.7.5)        
+remote:        Use `bundle info` to print more detailed information about a gem        
+remote: -----> Compiling Ruby/Rails        
+remote: 
+remote: [1m[33m###### WARNING:[0m        
+remote: 
+remote:        Installing a default version (24.13.0) of Node.js.        
+remote:        This version is not pinned and can change over time, causing unexpected failures.        
+remote:                
+remote:        Heroku recommends placing the `heroku/nodejs` buildpack in front of        
+remote:        `heroku/ruby` to install a specific version of node:        
+remote:                
+remote:        https://devcenter.heroku.com/articles/ruby-support#node-js-support        
+remote: 
+remote: -----> Installing node-v24.13.0-linux-x64        
+remote: -----> Detecting rake tasks        
+remote: -----> Preparing app for Rails asset pipeline        
+remote:        Running: rake assets:precompile        
+remote:        rake aborted!        
+remote:        NameError: undefined local variable or method `path' for an instance of ActionDispatch::Routing::Mapper (NameError)        
+remote:                
+remote:          Root path        
+remote:               ^^^^        
+remote:        Did you mean?  patch        
+remote:        /tmp/build_146a86b0/config/routes.rb:5:in `block in <main>'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/actionpack-8.1.2/lib/action_dispatch/routing/route_set.rb:477:in `instance_exec'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/actionpack-8.1.2/lib/action_dispatch/routing/route_set.rb:477:in `eval_block'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/actionpack-8.1.2/lib/action_dispatch/routing/route_set.rb:459:in `draw'        
+remote:        /tmp/build_146a86b0/config/routes.rb:1:in `<main>'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:63:in `load'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:63:in `block in load_paths'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:63:in `each'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:63:in `load_paths'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:24:in `reload!'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:51:in `block in updater'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/activesupport-8.1.2/lib/active_support/file_update_checker.rb:88:in `execute'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:33:in `execute'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/routes_reloader.rb:38:in `execute_unless_loaded'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application/finisher.rb:179:in `block in <module:Finisher>'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/initializable.rb:24:in `instance_exec'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/initializable.rb:24:in `run'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/initializable.rb:103:in `block in run_initializers'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:231:in `block in tsort_each'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:353:in `block (2 levels) in each_strongly_connected_component'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:434:in `each_strongly_connected_component_from'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:352:in `block in each_strongly_connected_component'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/initializable.rb:59:in `each'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/initializable.rb:59:in `each'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:350:in `call'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:350:in `each_strongly_connected_component'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:229:in `tsort_each'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/tsort-0.2.0/lib/tsort.rb:208:in `tsort_each'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/initializable.rb:102:in `run_initializers'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application.rb:442:in `initialize!'        
+remote:        /tmp/build_146a86b0/config/environment.rb:5:in `<main>'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.23.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:33:in `require'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/zeitwerk-2.7.5/lib/zeitwerk/core_ext/kernel.rb:34:in `require'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application.rb:418:in `require_environment!'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/railties-8.1.2/lib/rails/application.rb:569:in `block in run_tasks_blocks'        
+remote:        /tmp/build_146a86b0/vendor/bundle/ruby/3.3.0/gems/sprockets-rails-3.5.2/lib/sprockets/rails/task.rb:61:in `block (2 levels) in define'        
+remote:        Tasks: TOP => environment        
+remote:        (See full trace by running task with --trace)        
+remote: [1m[31m        
+remote:  !        
+remote:  !     Precompiling assets failed.        
+remote:  ![0m        
+remote:  !     Push rejected, failed to compile Ruby app.        
+remote: 
+remote:  !     Push failed        
+remote:  !        
+remote:  ! ## Warning - The same version of this code has already been built: fad6f718010ffc7d7c035832e314d18984cceb3e        
+remote:  !        
+remote:  ! We have detected that you have triggered a build from source code with version fad6f718010ffc7d7c035832e314d18984cceb3e        
+remote:  ! at least twice. One common cause of this behavior is attempting to deploy code from a different branch.        
+remote:  !        
+remote:  ! If you are developing on a branch and deploying via git you must run:        
+remote:  !        
+remote:  !     git push heroku <branchname>:main        
+remote:  !        
+remote:  ! This article goes into details on the behavior:        
+remote:  !   https://devcenter.heroku.com/articles/duplicate-build-version        
+remote: 
+remote: Verifying deploy...        
+remote: 
+remote: !	Push rejected to rails-watch-list-jou82.        
+remote: 
+To https://git.heroku.com/rails-watch-list-jou82.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/rails-watch-list-jou82.git'
