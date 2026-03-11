@@ -1,13 +1,29 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: rails_watch_list_development
+
+test:
+  <<: *default
+  database: rails_watch_list_test
+
 production:
-  primary:
+  primary: &primary_production
     <<: *default
     url: <%= ENV["DATABASE_URL"] %>
   cache:
-    <<: *default
+    <<: *primary_production
     url: <%= ENV["DATABASE_URL"] %>
+    migrations_paths: db/cache_migrate
   queue:
-    <<: *default
+    <<: *primary_production
     url: <%= ENV["DATABASE_URL"] %>
+    migrations_paths: db/queue_migrate
   cable:
-    <<: *default
+    <<: *primary_production
     url: <%= ENV["DATABASE_URL"] %>
+    migrations_paths: db/cable_migrate
